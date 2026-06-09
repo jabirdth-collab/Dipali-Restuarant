@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Plus Jakarta Sans', sans-serif;
+  --font-serif: 'Playfair Display', serif;
+  --font-mono: 'JetBrains Mono', monospace;
+
+  /* Premium Amber/Gold Accents */
+  --color-gold-50: #fdfbf7;
+  --color-gold-100: #f9f4eb;
+  --color-gold-200: #efe3ce;
+  --color-gold-300: #dfcaa2;
+  --color-gold-400: #caab71;
+  --color-gold-500: #b48c48;
+  --color-gold-600: #9b7138;
+  --color-gold-700: #81592e;
+  --color-gold-800: #694426;
+  --color-gold-900: #492a18;
+
+  /* Deep Royal Red Accents */
+  --color-brandred-50: #fff5f5;
+  --color-brandred-100: #ffe8e8;
+  --color-brandred-200: #ffd3d3;
+  --color-brandred-300: #ffaeb0;
+  --color-brandred-400: #ff767c;
+  --color-brandred-500: #f83c48;
+  --color-brandred-600: #e41c2c;
+  --color-brandred-700: #c01021;
+  --color-brandred-800: #a00f1e;
+  --color-brandred-900: #84101e;
+}
+
+/* Custom premium styling */
+html {
+  scroll-behavior: smooth;
+  background-color: #0d0d0c;
+  color: #f7f5f0;
+}
+
+body {
+  font-family: var(--font-sans);
+}
+
+/* Custom Webkit scrollbar for premium feeling */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0c0c0b;
+}
+::-webkit-scrollbar-thumb {
+  background: #311818;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #b48c48;
+}
+
+/* Lightbox support classes */
+.lightbox-fade-in {
+  animation: fadeIn 0.3s ease-out forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
